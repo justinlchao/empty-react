@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 const projects: Record<string, { title: string; description: string; tag: string; details: string }> = {
@@ -35,7 +36,6 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
   return (
     <main style={{ minHeight: "100vh", background: "#0a0a0a", color: "#fff", fontFamily: "Georgia, serif" }}>
-
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 48px", borderBottom: "1px solid #222" }}>
         <span style={{ fontSize: "18px", letterSpacing: "2px", color: "#6c63ff" }}>JUSTIN</span>
         <div style={{ display: "flex", gap: "32px" }}>
@@ -43,7 +43,6 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <Link href="/about" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px" }}>About</Link>
         </div>
       </nav>
-
       <section style={{ padding: "80px 48px", maxWidth: "680px" }}>
         <span style={{ fontSize: "11px", background: "#1a1a2e", color: "#6c63ff", padding: "4px 10px", borderRadius: "4px", letterSpacing: "1px" }}>{project.tag}</span>
         <h1 style={{ fontSize: "48px", fontWeight: "400", margin: "24px 0 16px" }}>{project.title}</h1>
