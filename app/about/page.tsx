@@ -1,9 +1,9 @@
+"use client";
 import Link from "next/link";
 
 export default function About() {
   return (
     <main style={{ minHeight: "100vh", background: "#0a0a0a", color: "#fff", fontFamily: "Georgia, serif" }}>
-      
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "24px 48px", borderBottom: "1px solid #222" }}>
         <span style={{ fontSize: "18px", letterSpacing: "2px", color: "#6c63ff" }}>JUSTIN</span>
         <div style={{ display: "flex", gap: "32px" }}>
@@ -11,7 +11,6 @@ export default function About() {
           <Link href="/about" style={{ color: "#fff", textDecoration: "none", fontSize: "14px" }}>About</Link>
         </div>
       </nav>
-
       <section style={{ padding: "80px 48px", maxWidth: "680px" }}>
         <p style={{ color: "#6c63ff", fontSize: "13px", letterSpacing: "4px", marginBottom: "16px" }}>ABOUT ME</p>
         <h1 style={{ fontSize: "48px", fontWeight: "400", margin: "0 0 32px" }}>A little about Justin</h1>
