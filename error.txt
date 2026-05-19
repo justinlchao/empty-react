@@ -1,0 +1,14 @@
+[31mFailed to type check.
+[39m
+[36m.next/dev/types/validator.ts[39m:[33m60[39m:[33m39[39m
+[31m[1mType error[22m[39m: Cannot find module '../../../app/projects/page.js' or its corresponding type declarations.
+
+  [90m58 |[0m {
+  [90m59 |[0m   [36mtype[0m __IsExpected<[33mSpecific[0m [36mextends[0m [33mAppPageConfig[0m<[32m"/projects"[0m>> = [33mSpecific[0m
+[31m[1m>[0m [90m60 |[0m   [36mconst[0m handler = {} [36mas[0m [36mtypeof[0m [36mimport[0m([32m"../../../app/projects/page.js"[0m)
+  [90m   |[0m                                       [31m[1m^[0m
+  [90m61 |[0m   [36mtype[0m __Check = __IsExpected<[36mtypeof[0m handler>
+  [90m62 |[0m   [90m// @ts-ignore[0m
+  [90m63 |[0m   [36mtype[0m __Unused = __Check
+Next.js build worker exited with code: 1 and signal: null
+[?25h
